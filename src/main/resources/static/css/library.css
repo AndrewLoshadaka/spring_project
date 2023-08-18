@@ -1,0 +1,114 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 0;
+    font-family: "Verdana", sans-serif;
+    background: linear-gradient( #b5fae0, #67e2b4);
+}
+
+table {
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    width: 98%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+th,
+td {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-color: #40b8c9;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+th {
+    background-color: #40b8c9;
+    font-weight: bold;
+}
+
+.table td:first-child {
+    width: 30%;
+}
+
+.table td:last-child {
+    text-align: center;
+}
+
+
+.table td {
+    position: relative;
+}
+
+.table td:hover {
+    transform: scale(1.075);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(#c9ebee, #aeffff);
+    border-radius: 5px;
+    z-index: 2;
+}
+
+button {
+    padding: 15px 120px; /* Увеличение размера кнопки */
+    background-color: #67e299;
+    color: #000;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    border-radius: 9px;
+    cursor: pointer;
+    display: block; /* Размещение кнопки по центру */
+    margin: 0 auto; /* Размещение кнопки по центру */
+}
+
+button:hover {
+    background: linear-gradient(#c9ebee, #aeffd0);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Центрирование кнопок по горизонтали */
+    margin-top: 20px; /* Отступ сверху */
+}
+
+.button-container a:not(:last-child) {
+    margin-right: 100px; /* Расстояние между кнопками */
+}
+
+h2 {
+    margin-left: 100px;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+
+input {
+    max-width: 800px; /* Замените на желаемое значение */
+    margin: 0 auto;
+    font-family: "Verdana", sans-serif;
+    font-size: 16px;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    background: linear-gradient(#93f5ec, #aaded6);
+}
+
+input:focus {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
+}
+
+select {
+    max-width: 800px; /* Замените на желаемое значение */
+    margin: 0 auto;
+    font-family: "Verdana", sans-serif;
+    font-size: 16px;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    background: linear-gradient(#93f5ec, #aaded9);
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/src/main/resources/static/css/library.css"/>\
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            padding: 0;
+            font-family: "Verdana", sans-serif;
+            background: linear-gradient( #b5fae0, #67e2b4);
+        }
+
+        button {
+            padding: 15px 120px; /* Увеличение размера кнопки */
+            background-color: #67e299;
+            color: #000;
+            font-weight: bold;
+            font-size: 16px;
+            border: none;
+            border-radius: 9px;
+            cursor: pointer;
+            display: block; /* Размещение кнопки по центру */
+            margin: 0 auto; /* Размещение кнопки по центру */
+        }
+
+        button:hover {
+            background: linear-gradient(#c9ebee, #aeffd0);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center; /* Центрирование кнопок по горизонтали */
+            margin-top: 20px; /* Отступ сверху */
+        }
+
+        .button-container a:not(:last-child) {
+            margin-right: 100px; /* Расстояние между кнопками */
+        }
+
+        h1 {
+            margin-left: 100px;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+    </style>
+    <title>Библиотека</title>
+</head>
+<body>
+<div class="main">
+    <h1>Библиотека</h1>
+    <div class="button-container">
+        <a th:href="@{/library/people}"><button>ЧИТАТЕЛИ</button></a>
+        <a th:href="@{/library/books}"><button>КНИГИ</button></a>
+    </div>
+</div>
+</body>
+</html>
