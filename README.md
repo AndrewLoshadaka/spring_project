@@ -12,4 +12,4 @@ Spring Data, Lombok, Thymeleaf, HTML, CSS.
 ---
 отчет о работе приложения
 
-![spring-project-img.gif](spring-project-img.gif)
+![spring-project-image.gif](spring-project-image.gif)
